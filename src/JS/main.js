@@ -1,28 +1,12 @@
-// Replacing If Else Chains with Switch
-function chainToSwitch(val) {
-  let answer = "";
-  // Only change code below this line
+// Delete Properties from a JavaScript Object
+// Setup
+const myDog = {
+  "name": "Happy Coder",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["freeCodeCamp Campers"],
+  "bark": "woof"
+};
 
- switch (val) {
-  case "bob":
-    answer = "Marley";
-    break;
-  case 42:
-    answer = "The Answer";
-    break;
-  case 1:
-    answer = "There is no #1";
-    break;
-  case 99:
-    answer = "Missed me by this much!";
-    break;
-  case 7:
-    answer = "Ate Nine";
-    break;
-}
-
-  // Only change code above this line
-  return answer;
-}
-
-chainToSwitch(7);
+// Only change code below this line
+delete myDog.tails;
